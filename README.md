@@ -2,11 +2,6 @@
 
 A classic Snake game implementation in Python.
 
-## Project Status
-🚧 In Development 🚧
-
-This project is currently under active development. Features and functionality may change as development progresses.
-
 ## Features
 - Classic snake gameplay
 - Score tracking
