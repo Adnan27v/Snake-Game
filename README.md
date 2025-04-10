@@ -12,6 +12,23 @@ This project is currently under active development. Features and functionality m
 - Score tracking
 - Game over detection
 - Basic controls
+- Snake movement and growth mechanics
+- Food spawning system
+- Collision detection
+- Score display
+- Game over screen
+
+## Project Structure
+```
+Snake_game/
+├── main.py          # Main game entry point
+├── snake.py         # Snake class implementation
+├── food.py         # Food class and spawning logic
+├── scoreboard.py   # Score tracking and display
+
+├── .gitignore       # Git ignore rules
+└── README.md        # Project documentation
+```
 
 ## Requirements
 - Python 3.x
@@ -37,6 +54,12 @@ python main.py
 ## Controls
 - Arrow keys/ WASD keys: Control snake direction
 - ESC: Quit game
+
+## Development Setup
+This project is set up with:
+- Git for version control
+- Virtual environment for dependency management
+- Proper .gitignore configuration
 
 ## Contributing
 Feel free to submit issues and enhancement requests!
