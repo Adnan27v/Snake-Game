@@ -40,7 +40,7 @@ python main.py
 
 2. Controls:
    - Use `WASD` or `Arrow Keys` to control the snake
-   - Press `Rc` and then 'Click on screen' to exit the game
+   - Press `R` and then 'Click on screen' to exit the game
    - Click the window to exit
 
 3. Game Rules:
