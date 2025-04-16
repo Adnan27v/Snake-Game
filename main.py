@@ -31,6 +31,11 @@ screen.onkey(snake.right,"Right")
 
 game_over = False
 scoreboard = Scoreboard()
+def set_game_over():
+    global game_over
+    game_over = True
+
+screen.onkey(set_game_over,"r")
 
 while  not game_over:
 
@@ -43,16 +48,20 @@ while  not game_over:
         food.refresh()
         snake.extend()
         scoreboard.score += 1
-        scoreboard.print_score(scoreboard.score)
+        scoreboard.print_score(scoreboard.score, scoreboard.high_score)
 
     if snake.head.xcor() > 290 or snake.head.xcor() < -290 or snake.head.ycor() > 290 or snake.head.ycor() < -290:
-        game_over = True
-        scoreboard.game_over()
+        #game_over = True
+        scoreboard.reset()
+        snake.reset()
 
     for segment in snake.segments[1:]:
 
         if snake.head.distance(segment) < 10:
-            game_over = True
-            scoreboard.game_over()
+            #game_over = True
+            scoreboard.reset()
+            snake.reset()
+
+scoreboard.game_over()
 
 screen.exitonclick()

@@ -21,7 +21,7 @@ class Snake:
     def add_segment(self,position):
         t = Turtle()
         t.speed("fastest")
-        t.shape("square")
+        t.shape("circle")
         t.color("white")
         self.segments.append(t)
         t.penup()
@@ -55,3 +55,10 @@ class Snake:
 
         if self.head.heading() != RIGHT:
             self.head.setheading(LEFT)
+
+    def reset(self):
+        for segment in self.segments:
+            segment.goto(1000,1000)
+        self.segments.clear()
+        self.create_snake()
+        self.head = self.segments[0]

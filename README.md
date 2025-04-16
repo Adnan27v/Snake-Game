@@ -1,63 +1,65 @@
 # Snake Game
 
-A classic Snake game implementation in Python.
+A classic Snake game implementation using Python's Turtle graphics library. This project features a modern take on the classic arcade game with smooth controls, score tracking, and high score functionality.
 
 ## Features
-- Classic snake gameplay
-- Score tracking
-- Game over detection
-- Basic controls
-- Snake movement and growth mechanics
-- Food spawning system
-- Collision detection
-- Score display
-- Game over screen
 
-## Project Structure
-```
-Snake_game/
-├── main.py          # Main game entry point
-├── snake.py         # Snake class implementation
-├── food.py         # Food class and spawning logic
-├── scoreboard.py   # Score tracking and display
-
-├── .gitignore       # Git ignore rules
-└── README.md        # Project documentation
-```
+- 🎮 Classic Snake gameplay
+- ⬆️ Intuitive controls using both arrow keys and WASD
+- 📊 Score tracking and high score system
+- 🎯 Random food generation
+- 🎨 Clean, modern graphics with a dark theme
+- 🔄 Game reset functionality
+- 🏆 Persistent high score storage
 
 ## Requirements
+
 - Python 3.x
-- Pygame library
+- Turtle graphics library (built-in with Python)
 
 ## Installation
-1. Clone this repository
-2. Create a virtual environment (recommended):
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
-## Running the Game
+1. Clone this repository:
+```bash
+git clone https://github.com/yourusername/snake-game.git
+cd snake-game
+```
+
+2. Create and activate a virtual environment (recommended):
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+```
+
+## How to Play
+
+1. Run the game:
 ```bash
 python main.py
 ```
 
-## Controls
-- Arrow keys/ WASD keys: Control snake direction
-- ESC: Quit game
+2. Controls:
+   - Use `WASD` or `Arrow Keys` to control the snake
+   - Press `Rc` and then 'Click on screen' to exit the game
+   - Click the window to exit
 
-## Development Setup
-This project is set up with:
-- Git for version control
-- Virtual environment for dependency management
-- Proper .gitignore configuration
+3. Game Rules:
+   - Eat the food to grow longer and increase your score
+   - Avoid hitting the walls or yourself
+   - Try to beat your high score!
+
+## Project Structure
+
+- `main.py` - Main game loop and setup
+- `snake.py` - Snake class implementation
+- `food.py` - Food class implementation
+- `scoreboard.py` - Score tracking and display
+- `highscore.txt` - Stores the highest score achieved
 
 ## Contributing
-Feel free to submit issues and enhancement requests!
+
+Feel free to fork this project and submit pull requests with improvements!
 
 ## License
+
 This project is open source and available under the MIT License. 
